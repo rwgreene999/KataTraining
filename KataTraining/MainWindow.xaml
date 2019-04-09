@@ -1,0 +1,35 @@
+﻿<Window x:Class="KataTraining.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KataTraining"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="700" Width="800" Loaded="Window_Loaded">
+
+    <Grid Margin="0,0,0,0">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF009AFF" Offset="0.006"/>
+                <GradientStop Color="#FF4FDECB" Offset="0.8"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <DockPanel VerticalAlignment="stretch">
+            <StackPanel DockPanel.Dock="Top">
+                <Label FontSize="60" FontWeight="Bold" x:Name="label" Content="Begin"  Height="90" />
+                <Image Name="AttackImage" Height="500" />
+            </StackPanel>
+            <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal"  >
+                <Button Name="PauseResume"  Margin="10,0,0,0" Click="Button_Click" Height="30" Width="100" >
+                    Pause
+                </Button>
+                <Label Margin="10,0,0,0" FontWeight="Bold" Content="Info:" Height="30"></Label>
+                <Label Margin="5,0,0,0" FontWeight="Bold" x:Name="lblInfoUrl" Content="https://MistyMountainGroup.com" Height="30"></Label>
+                
+
+            </StackPanel>
+            
+        </DockPanel>
+
+    </Grid>
+</Window>
